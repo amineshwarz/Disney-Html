@@ -1,0 +1,111 @@
+*{
+    margin: 0px;          /* marge interieur*/
+    padding: O;            /* marge exterieur*/
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif ;
+
+}
+
+ /********** Css pour la menu nav ****************/
+
+.navLogo {
+    width: 100px;
+}
+.header{
+    display: flex;
+}
+.navUl{
+    display: flex;
+    list-style-type: none;
+}
+ul li {
+    display: flex;
+    padding: 15px;
+}
+/****a balise a avec hover (survoller la sourie)****/
+
+a {
+    color: black;
+}
+a:hover {
+    color: #0080FF;
+}
+/************ section bannier ********************/
+
+.sectionBaner{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+    margin-top: 5em;    
+}
+.stitchBg{
+    display: flex;
+    width: 100%;
+}
+
+.stitchLogo {   
+    width: 25em;
+}
+
+/************ section 2 ********************/
+
+.sectionPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #d0cccc;
+    padding: 1em 6em 2em 6em;
+    
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff;
+    overflow-x:hidden;
+
+}
+
+.imgBlock{
+    display: flex;
+    width: 17em;
+}
+ 
+.detailBlock{
+    display: block;
+    flex-direction: column;
+    padding: 1px 11px 11px 11px; 
+}
+
+.titleBlock{
+    margin-top: 40px;
+    font-size:small;
+}
+
+.descBlock{
+    margin-top: 40px;
+    font-size: small;
+    
+}
+.categorieBlock{
+    margin-top: 40px;
+    font-size: medium;
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    padding: 10em;
+    background-color: #054553;
+    text-align: center;
+}

@@ -55,23 +55,14 @@ a:hover {
 
 .sectionPic{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content:space-around;
+    justify-content:space-evenly;
     background-color: #efeded;
-    padding: 1em 6em 2em 6em;
-    max-width: 100%;
-    
+    padding: 1% 5% 1% 5%;
 }
 
 .block{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color:#ffffff;
-    overflow-x:hidden;
-    width: 16%;
+    width: 17em;
 
 }
 
@@ -81,25 +72,21 @@ a:hover {
 }
  
 .detailBlock{
-    display: block;
+    display:flex;
     flex-direction: column;
-    padding: 1px 11px 11px 11px; 
+    padding: 1% 8% 1% 8%; 
 }
 
 .titleBlock{
-    margin-top: 40px;
+    margin-top: 15%;
     font-size:small;
 }
 
 .descBlock{
-    margin-top: 40px;
+    margin-top: 5%;
     font-size: small;
     
 }
-#descBlock{
-    margin: 0;
-    padding: 4px;
-   }
 .categorieBlock{
     margin-top: 40px;
     font-size: medium;
@@ -129,9 +116,12 @@ a:hover {
 
 .imgSection{
     display: flex;
-    padding: 2em 6em 3em 6em;
+    padding: 2em 7em 3em 7em;
 }
-
+.imgBlock2{
+    display: flex;
+    width: 100%;
+}
 .textSection{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -152,40 +142,231 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #efeded;
+}
+.titleSec5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;   
 }
 .blocDoublepic{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content:space-around;
-    padding: 1em 6em 2em 6em;
+    padding: 2em 7em 3em 7em;
 }
 .blocPicSec5{  
+    margin-left: 2%;
     background-color:#ffffff;
 }
+.imgBlock5{
+    width: 37em;
+}
+/**/
+.detailBlock5{
+    display:flex;
+    flex-direction: column;
+    padding: 1% 8% 1% 8%; 
+}
+
+.titleBlock5{
+    margin-top: 5%;
+}
+
+.descBlock5{
+    margin-top: 5%;
+    font-size: small;
+    
+}
+.categorieBlock5{
+    margin-top: 40px;
+    font-size: medium;
+}
+
+
+
+
 
 /************ section 6 ********************/
 .section6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #efeded;
-    padding: 1em 3em 1em 3%;
 }
 .PicSec6{
-    width: 100%;
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr;
-    
+    grid-template-columns: 50% 25% 25%;
+    padding: 1% 5% 2% 5%;
 }
 .blocPicSec6{
+    margin-left: 2%;
     background-color:#ffffff;
 }
 
+.imgBlock6{
+    width: 20em;
+}
+#imgBlock6{
+    width: 100%;
+}
+.detailBlock6{
+    display:flex;
+    flex-direction: column;
+    padding: 1% 8% 1% 8%; 
+}
+
+.titleBlock6{
+    margin-top: 5%;
+}
+
+.descBlock6{
+    margin-top: 5%;
+    font-size: small;
+    
+}
+.categorieBlock6{
+    margin-top: 40px;
+    font-size: medium;
+}
+
+/************ section 7 Bannier Boutiques ********************/
+.section7{
+    padding: 1em 5em 2em 5em;
+    background-color: #efeded;
+}
+.imgBlocSec7{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+    margin-top: 7em;  
+    color: beige;
+ 
+}
+.titleSec7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1em;  
+}
+.logoBgSec7 {   
+    width: 25em;
+    margin-bottom: 1em;
+}
+
+.imgBgSec7{
+    display: flex;
+    width: 100%;
+}
+/************ section 8  ********************/
+
+.section8{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #efeded;
+}
+.titleSec8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blocImgSec8{
+    display: flex;
+    justify-content: center;
+    padding: 2em 5em 3em 5em;
+
+}
+.bloc8{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.imgBlock8{
+    width: 100%;
+}
+.detailBlock8{
+    display:flex;
+    padding: 5% 8% 1% 0%; 
+}
+/************ section 9  ********************/
+
+.section9{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em 5em 2em 5em;
+    background-color: #efeded;
+}
+
+.titleSec9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+.sectionBaner9{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 5%;    
+}
+
+.bgSec9{
+    display: flex;
+    width: 100%;
+}
+
+.stitchLogo {   
+    width: 25em;
+}
+.textSec9{
+    color: azure;
+    width: 19em;
+    font-size:xx-large;
+    text-align: center;
+    padding-bottom: 1em;
+}
 
 
+/************ section 10 ********************/
+.section10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 5em 2em 5em;
+}
+.iconSec10{
+    padding-top: 1%;
+}
 
+/************ Footer ********************/
 .footer{
     display: flex;
-    padding: 10em;
-    background-color: #530505;
+    flex-direction: column;
+}
+.blocLogo{
+    display: flex;
+    justify-content: center; 
+}
+.footerLogo {
+    width: 100px;
+}
+.footerUl{
+    display: flex;
+    list-style-type: none;
+    font-size: xx-small;
+}
+.copyright{
     text-align: center;
+    font-size: xx-small;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }

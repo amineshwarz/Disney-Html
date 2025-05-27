@@ -8,8 +8,12 @@
 }
 
  /********** Css pour la menu nav ****************/
-
-.navLogo {
+ .logoHeader{
+    display: flex;
+    padding-left: 4%;
+    padding-top: 1%;
+}
+ .navLogo {
     width: 100px;
 }
 .header{
@@ -22,6 +26,127 @@
 ul li {
     display: flex;
     padding: 15px;
+}
+/************** Menu Burger************/
+.mobilescreen{
+    display: flex;
+    justify-content: end;
+}
+
+.menuToggle{
+    display: none;
+}
+
+#menuToggle
+{
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input
+{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #010506;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 3px 0px;
+    transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #2C3E50;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg)     
+      scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*This is the Menu part, which gets triggered by toggle*/
+#menu
+{
+    position: absolute;
+    width: 90vw;
+    height: 50vh;
+    margin: 0 0 0 -50px;
+    padding: 50px;
+    background: rgba(236, 240, 241, 0.97);;
+    list-style-type: none;
+    transform-origin: 0 0;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    text-align: center;
+
+}
+
+#menu li
+{
+    padding: 15px 0;
+    color: #000000;
+    list-style-type: none;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#menu li a {
+    color: #2C3E50;
+    text-decoration: none;
+    text-transformation: uppercase;
+}
+
+#menu li a:hover {
+    color: #2074f2;
+    text-decoration: none;
+}
+
+#menuToggle input:checked ~ ul
+{
+    transform: scale(1.0, 1.0);
+    opacity: 1;
 }
 /****a balise a avec hover (survoller la sourie)****/
 
@@ -36,27 +161,70 @@ a:hover {
 .sectionBaner{
     position:absolute;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 5em;
-    margin-top: 5em;    
+    width: 46%;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 .stitchBg{
-    display: flex;
     width: 100%;
 }
 
-.stitchLogo {   
-    width: 25em;
+.stitchLogo {  
+    position: relative; 
+    width: 45%;
+}
+
+.test{
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+}
+
+.bgstitch2Resp{
+    display: none;
+}
+
+
+.btntest{
+    display: flex;
+    align-self: center;
+    background-color: #6c789e;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top:15px;
+    cursor: pointer;
+}
+
+.btnInfo{
+    display: flex;
+    background: transparent;
+    align-self: center;
+    color: black;
+    border: 2px solid #6c789e;
+    border-radius: 50px;
+    padding: 18px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor:pointer
 }
 
 /************ section 2 ********************/
 
 .sectionPic{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
-    background-color: #efeded;
+    background-color:#F1F2F3;
     padding: 1% 5% 1% 5%;
 }
 
@@ -116,6 +284,7 @@ a:hover {
 
 .imgSection{
     display: flex;
+    flex-wrap: wrap;
     padding: 2em 7em 3em 7em;
 }
 .imgBlock2{
@@ -143,7 +312,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #efeded;
+    background-color: #F1F2F3;
 }
 .titleSec5{
     display: flex;
@@ -153,14 +322,14 @@ a:hover {
 }
 .blocDoublepic{
     display: flex;
-    padding: 2em 7em 3em 7em;
+    padding: 2% 7% 3% 7%;
 }
 .blocPicSec5{  
     margin-left: 2%;
     background-color:#ffffff;
 }
 .imgBlock5{
-    width: 37em;
+    width: 100%;
 }
 /**/
 .detailBlock5{
@@ -183,16 +352,12 @@ a:hover {
     font-size: medium;
 }
 
-
-
-
-
 /************ section 6 ********************/
 .section6{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #efeded;
+    background-color: #F1F2F3;
 }
 .PicSec6{
     display: grid;
@@ -200,12 +365,14 @@ a:hover {
     padding: 1% 5% 2% 5%;
 }
 .blocPicSec6{
+    display: flex;
+    flex-direction: column;
     margin-left: 2%;
     background-color:#ffffff;
 }
 
 .imgBlock6{
-    width: 20em;
+    width: 100%;
 }
 #imgBlock6{
     width: 100%;
@@ -232,18 +399,18 @@ a:hover {
 
 /************ section 7 Bannier Boutiques ********************/
 .section7{
-    padding: 1em 5em 2em 5em;
-    background-color: #efeded;
+    padding: 1% 5% 2% 5%;
+    background-color: #F1F2F3;
 }
 .imgBlocSec7{
     position:absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-left: 5em;
-    margin-top: 7em;  
+    align-items: center; 
     color: beige;
+    padding-top: 4%;
+    padding-left: 4%;
  
 }
 .titleSec7{
@@ -253,8 +420,9 @@ a:hover {
     padding-bottom: 1em;  
 }
 .logoBgSec7 {   
-    width: 25em;
-    margin-bottom: 1em;
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 10%;
 }
 
 .imgBgSec7{
@@ -267,7 +435,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #efeded;
+    background-color: #F1F2F3;
 }
 .titleSec8{
     display: flex;
@@ -298,8 +466,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em 5em 2em 5em;
-    background-color: #efeded;
+    padding: 1% 5% 2% 5%;
+    background-color: #F1F2F3;
 }
 
 .titleSec9{
@@ -314,7 +482,6 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 25%;
     margin-top: 5%;    
 }
 
@@ -323,9 +490,7 @@ a:hover {
     width: 100%;
 }
 
-.stitchLogo {   
-    width: 25em;
-}
+
 .textSec9{
     color: azure;
     width: 19em;
@@ -333,8 +498,9 @@ a:hover {
     text-align: center;
     padding-bottom: 1em;
 }
-
-
+.bgBannierRespSec9{
+    display: none;
+  }
 /************ section 10 ********************/
 .section10{
     display: flex;
@@ -361,6 +527,7 @@ a:hover {
 }
 .footerUl{
     display: flex;
+    justify-content: center;
     list-style-type: none;
     font-size: xx-small;
 }
@@ -370,3 +537,99 @@ a:hover {
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
+
+/************** les media query **************/
+
+@media screen and (max-width: 800px) {
+    .menuToggle{
+      display: block;
+    }
+    .header{
+        display: none;
+    }
+    .logoHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 4%;
+        padding-top: 1%;
+    }
+
+    .bgstitch2{
+        display: none;
+    }
+    .bgstitch2Resp{
+        display: block;
+    }
+
+    .sectionBaner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e9f1f6;
+        width: 100%;
+        margin: 0;
+    }
+    .testBanner{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+       }
+    
+    .blocDoublepic{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .PicSec6{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgBlocSec7{
+        position: relative;
+        flex-wrap: wrap;
+        background-color: #0c0c3b;
+        width: 100%;
+        padding: 2%;
+        font-size: small;
+    }  
+    .logoBgSec7 {   
+        width: 45%;
+        margin-bottom: 4%;
+        margin-top: 5%;
+    }
+    .testSec7{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .blocImgSec8{
+        flex-wrap: wrap;
+    }
+    .sectionBaner9{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #0e0e7a;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 0;
+    }
+    .testSec9{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse
+    }
+    .textSec9{
+        font-size: smaller;
+    }
+    .bgBannierRespSec9{
+        display: block;
+      }
+    .bgBannierSec9{
+        display: none;
+    }
+  }

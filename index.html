@@ -4,16 +4,17 @@
         <meta charset="Utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./CSS/style.css" rel="stylesheet">
-        <title>  Disney.fr⎥Le site officiel de l'univers Disney </title>
+        <link rel="icon" type="image/gif" href="Images/faviconDisney.icon.png" />
+        <title>  Amine Disney.fr⎥Le site officiel de l'univers Disney </title>
     </head>
 
 <body>
     <header>
-        <div class="header">
+        <div class="logoHeader">
             <div>
                 <img class="navLogo" src="./Images/disney-logo.png" alt="Logo">
             </div>
-            <div>
+            <div class="header">
                 <nav>
                     <ul class="navUl">
                         <li><a href="#">DISNEY+</a></li>
@@ -24,23 +25,45 @@
                 </nav>
             </div>
         </div>
+        <div class="menuToggle"> <!-- Menu Burger-->
+            <nav class="mobilescreen">
+                <div title="Menu" id="menuToggle">
+                    <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                    <ul id="menu">
+                        <li>
+                            <a href="#">DISNEY+</a>
+                        </li>
+                        <li>
+                            <a href="#">BOUTIQUE</a>
+                        </li>
+                        <li>
+                            <a href="#">FILMS</a>
+                        </li>
+                        <li>
+                            <a href="#">PARCS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-
     <main>
-        <section>
-            <div>  
-
+        <section >
+            <div class="testBanner">           
                 <div class="sectionBaner">
                     <img class="stitchLogo" src="./Images/stitchLogo.png" alt="Logo Stitch">
                     <p > Actuellement au cinéma </p>
-                    <button class="button1" type="button"> RÉSERVER VOS BILLETS</button>
-                    <button class="button2" type="button"> RÉSERVER VOS BILLETS</button>
-                </div> 
-
-                <div>
+                    <button class="btntest" type="button"> RÉSERVER VOS BILLETS</button>
+                    <button class="btnInfo" type="button"> EN SAVOIR PLUS</button>
+                </div>
+                <div class="bgstitch2">
                     <img class="stitchBg" src="./Images/stitchBG.jpeg" alt="Bannier Stitch">
-                </div>   
-
+                </div> 
+                <div class="bgstitch2Resp">
+                    <img class="stitchBg" src="./Images/stitch30.jpeg" alt="Bannier Stitch">
+                </div>
             </div>
         </section>
         <section class="sectionPic">
@@ -237,11 +260,11 @@
             <div class="titleSec7"> <!-- block titre -->
                 <h2> Boutique </h2>
             </div>
-            <div > <!-- bannier des deux images  -->
+            <div class="testSec7"> <!-- bannier des deux images  -->
                 <div class="imgBlocSec7"> <!-- partie image gauche dans le block-->
                     <img class="logoBgSec7" src="./Images/logo-white.png" alt="Disney Logo">
-                    <p > Revivez en famille la magie de vos contes préférés </p>
-                    <p > Decouvrir</p>
+                    <p> Revivez en famille la magie de vos contes préférés </p>
+                    <p> Decouvrir</p>
                 </div>
                 <div><!-- partie image bckgroud dans le block-->
                     <img class="imgBgSec7" src="./Images/shop_disney.jpeg" alt="Boutique disney">
@@ -300,15 +323,18 @@
             <div class="titleSec9"> <!-- Titre Section-->
                 <h2> Plus d'actus </h2>
             </div>
-            <div> <!-- bannier Section-->
+            <div class="testSec9"> <!-- bannier Section-->
                 <div class="sectionBaner9">
                     <div class="textSec9">
                         <h2>Inscrivez-vous pour recevoir les actualités Disney et plus encore</h2>
                     </div>
                     <button class="" type="button">  REJOIGNEZ LA FAMILLE DISNEY </button>
                 </div> 
-                <div> <!-- background bannier -->
+                <div class="bgBannierSec9"> <!-- background bannier -->
                     <img class="bgSec9" src="./Images/plus-info.jpeg" alt="images newslettre">
+                </div>
+                <div class="bgBannierRespSec9"> <!-- background bannier responsive -->
+                    <img class="bgSec9" src="./Images/newsletter2.jpeg" alt="images newslettre">
                 </div>
             </div>
         </section>
